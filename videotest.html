@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="http://jwpsrv.com/library/dJXdMiqBEeOMnhIxOUCPzg.js"></script>
+    <title></title>
+
+</head>
+<body>
+'<div><div  ng-repeat="media in unpublishedNews" class="approve-video-1">'+
+    "<a href='#/news/{{media._id}}'>" +
+        '<div class="only-video">'+
+            '<span class="recent-video-thumb">'+
+            '<img ng-src="{{media.imgurl}}"></span>'+
+            '</span>'+
+            '</div>'+
+        "</a>"+
+    '<div class="recent-lockup-content">'+
+        '<h3 class="recent-lockup-title">'+
+            '<a>'+
+                '<p class="popular-small-heading">{{media.title}}</p>'+
+                '</a>'+
+            '</h3>'+
+        '<div class="approve-video-meta">'+
+            '<p class="small-meta-info">'+
+                '<span class="deemphasized-text-name">{{userSelectedLanguage["data"]["by"]}}&nbsp;' +
+            '<a class="user-name ng-binding" >{{media["__createdby"]["firstname"]}}</a></span>'+
+                '<span class="deemphasized-text ng-binding">{{media["__createdon"]}}</span>'+
+                '</p>'+
+            '<p class="approve-btn">'+
+                '<span>'+
+            '<button class="video-approve-btn" ng-click="updateStatus(media,\'publish\')" ng-hide="media.published || media.rejected">Approve</button>'+
+            '<label class="video-reject-hide-btn" ng-show="media.published || media.rejected">{{media.message}}</label>	 ' +
+            '<button class="video-reject-btn" ng-click="updateStatus(media,\'reject\')" ng-hide="media.published || media.rejected">Reject</button>'+
+            '</span>'+
+                '</p>'+
+            '</div>' +
+        '</div>' +
+    '</div>' +
+    '<div id="scrollDiv"></div>'+
+    '</div>',
+
+</body>
+</html>

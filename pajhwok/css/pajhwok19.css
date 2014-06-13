@@ -1,0 +1,58 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.selected_category {
+    background-color: #009CFF;
+    color: white;
+}
+
+.map {
+    height: 540px;
+    width: 98%;
+    border: 2px solid #777777;
+    margin: 3px;
+}
+
+/*.active_language {*/
+    /*background:-webkit-linear-gradient(bottom, #009CFF, #75C0F0) ! important;*/
+    /*background:-o-linear-gradient(bottom, #009CFF, #75C0F0) ! important;*/
+    /*background:-moz-linear-gradient(bottom, #009CFF, #75C0F0) ! important;*/
+    /*background:linear-gradient(bottom, #009CFF, #75C0F0)! important;*/
+    /*box-shadow:0 1px 0 #009CFF inset, 0 5px 0 0 #1A7AB8 ! important;*/
+    /*color: #fff ! important;*/
+    /*font-weight: 700 ! important;*/
+/*}*/
+
+.video-thumb-img {
+    width: 778px;
+    height: 500px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: #000000;
+}
+
+.yellow {
+    color: #9acd32;
+}
+.mapview{
+    visibility: hidden;
+}
+
+/*my chanage for about us*/
+.staticpara{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="maptesting">
+<head>
+    <title></title>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/jquery.xdomainrequest.min.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="../js/angular-google-maps.js"></script>
+    <!--<script type="text/javascript" src="../js/module.js"></script>-->
+    <!--<script type="text/javascript" src="../js/layers.js"></script>-->
+    <!--<script type="text/javascript" src="../js/Layer.js"></script>-->
+    <script src="../js/ui-map.min.js"></script>
+    <script src="../js/event.js"> </script>
+    <script src="../js/pajhwok-strap4.js"> </script>
+    <script src="../js/jsoncontrol.js"></script>
+    <link rel="stylesheet"
+          href="../css/json.css">
+</head>
+<body>
+<div ng-app='maptesting'>
+    <div ng-controller="MapCtrl">
+
+<div id="map_canvas" ui-map="myMap" style="height:600px;width:600px;border:2px solid #777777;margin:3px;"
+                     ui-options="mapOptions" ng-init="onmycal()" ui-event="{'map-idle' : 'onmapidl()', 'map-click': 'addMarker($event, $params)'
+                     ,'map-zoom_changed': 'setZoomMessage(myMap.getZoom())'}">
+</div>
+<h4>Click to add a marker!</h4>
+<p>{{zoomMessage}}</p>
+     <ul>
+          <li ng-repeat="marker in myMarkers">
+                <a ng-click="myMap.panTo(marker.getPosition())">Pan to Marker {{$index}}</a>
+          </li>
+     </ul>
+
+  <!--<div ng-repeat="marker in myMarkers track by $index" ui-map-marker="myMarkers[$index]"  ui-event="{'map-click': 'openMarkerInfo(marker)'}"> </div>-->
+   <!--<div  ui-map-info-window="myInfoWindow" style="height: 80px;width: 150px">-->
+             <!--<p><a href="">click here to show report</a></p>-->
+    <!--</div>-->
+
+<div ng-repeat="marker in myMarkers" ui-map-marker="myMarkers[$index]"  ui-event="{'map-click': 'openMarkerInfo(marker)'}"> </div>
+                <div ui-map-info-window="myInfoWindow" style="height: 80px;width: 150px">
+                <p><a href="">click here to show report ,lat,lng</a></p>
+            </div>
+ >
+        <a ng-click="showMarkers()">click me to show</a>
+    </div>
+</div>
+
+</body>
+</html>
