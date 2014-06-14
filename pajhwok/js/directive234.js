@@ -2200,7 +2200,7 @@ pajhwokApp.directive('specialMines', [function ($scope) {
         restrict:"E",
         replace:true,
         template:'<div class="special-mines"><div class=""><h3 class="left-heading">{{userSelectedLanguage.data.splminespages}}</h3></div>' +
-            '<div class="logo"><a href="http://mines.pajhwok.com/"><img id="logo-white" src="images/logo-white.png"></a></div><div class="view-all"><a href="http://mines.pajhwok.com/"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
+            '<div class="logo"><a href="http://mines.pajhwok.com/" target="_blank" ><img id="logo-white" src="images/logo-white.png"></a></div><div class="view-all"><a href="http://mines.pajhwok.com/"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
             '<div class="right-arrow"><a href="http://mines.pajhwok.com/"><img src="images/arrow.png" class="view-all-arrow"></a></div></div></div>'
 
 
@@ -2212,7 +2212,7 @@ pajhwokApp.directive('election', [function ($scope) {
         restrict:"E",
         replace:true,
         template:'<div class="election"><div class=""><h3 class="left-heading">{{userSelectedLanguage.data.pajhwokelection2014}}</h3></div>' +
-            '<div class="logo"><a href="http://www.elections.pajhwok.com/"><img id="logo-white" src="images/logo-white.png"></a></div><div class="view-all"><a href="http://www.elections.pajhwok.com/"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
+            '<div class="logo"><a href="http://www.elections.pajhwok.com/" target="_blank" ><img id="logo-white" src="images/logo-white.png"></a></div><div class="view-all"><a href="http://www.elections.pajhwok.com/"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
             '<div class="right-arrow"><a href="http://www.elections.pajhwok.com/"><img src="images/arrow.png" class="view-all-arrow"></a></div></div></div>'
 
 
@@ -2224,7 +2224,7 @@ pajhwokApp.directive('yourVote', [function ($scope) {
         restrict:"E",
         replace:true,
         template:'<div class="election"><div class=""><h3 class="left-heading">{{userSelectedLanguage.data.votehere}}</h3></div>' +
-            '<div class="logo"><a href="http://votehere.af"><img id="logoVote" src="images/votehere.JPG "></a></div><div class="view-all"><a href="http://votehere.af"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
+            '<div class="logo"><a href="http://votehere.af" target="_blank"><img id="logoVote" src="images/votehere1.JPG"></a></div><div class="view-all"><a href="http://votehere.af"><div id="view-all">{{userSelectedLanguage.data.viewall}}</div></a>' +
             '<div class="right-arrow"><a href="http://votehere.af"><img src="images/arrow.png" class="view-all-arrow"></a></div></div></div>'
 
 
